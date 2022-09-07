@@ -1,0 +1,227 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flower PSD</title>
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/bxslider.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+     
+    <header id="home" class="header_section">
+        <nav>
+            <div class="row">
+               <div class="search_area">
+                <form action="#">                    <input type="text" placeholder="Search Here">
+                <input type="submit" value="" class="search_menu">
+                </form>
+                </div>
+               <a href="#"><img src="img/flowers-logo.png" alt="logo" class="logo"></a>
+                <ul class="main_nav">
+                    <li class="active"><a href="#home">HOME</a></li>
+                    <li><a href="#slider">slider</a></li>
+                    <li><a href="#slider_bottom">slider_bottom</a></li>
+                    <li><a href="#work">work</a>
+                    <ul>
+                        <li><a href="#">rajikul</a></li>
+                        <li><a href="#">rajib</a></li>
+                        <li><a href="#">rajikul</a></li>
+                        <li><a href="#">rajib</a></li>
+                        <li><a href="#">rajikul</a></li>
+                        <li><a href="#">rejaul</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="#contact">contact</a></li>
+                    <li><a href="#copyright">copyright</a></li>
+                </ul>
+                  <div class="mobile_menu">
+                  <span onclick="openNav()">&#9776;</span>
+                  <div id="myNav" class="overlay">
+                      <a href="javascript:void(0)" onclick="closeNav()" class="closebtn">&times;</a>
+                      <div class="overlay_content">
+                    <a onclick="closeNav()" href="#home">HOME</a>
+                    <a onclick="closeNav()" href="#slider">slider</a>
+                    <a onclick="closeNav()" href="#slider_bottom">slider_bottom</a>
+                    <a onclick="closeNav()" href="#work">work</a>
+                    <a onclick="closeNav()" href="#contact">contact</a>
+                    <a onclick="closeNav()" href="#copyright">copyright</a>               
+                      </div>
+                  </div>
+                  </div> 
+    <!--Click function jquery CDN  MAIN mEnu click Korle Color Change Hoy-->
+                  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+                <script>
+                $(document).on('click','ul li',function(){
+                    $(this).addClass('active').siblings().removeClass('active');
+                })
+                </script>
+            </div>
+        </nav>
+    </header>
+<section id="slider" class="js_slider_section slider_section">
+    <div class="row">
+        <h1>“ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non diam erat. In fringilla massa ut nisi ullamcorper pellentesque „</h1>
+        <div class="slider_area">
+        
+        <div class="item">
+          <h1>Welcome to Flower famele</h1>
+            <img src="img/slider_01.jpg" alt="slider">
+        </div>
+   
+        <div class="item">
+            <img src="img/slider_02.jpg" alt="slider">
+        </div>
+   
+        <div class="item">
+            <img src="img/slider_03.jpg" alt="slider">
+        </div>
+    </div>
+    </div>
+</section>    
+  
+   <section id="slider_bottom" class="slider_section_bottom">
+       <div class="row">
+           <div class="col span_1_of_3 ">
+               <div class="image">
+                   <img src="img/slider_01.jpg" alt="">
+               </div>
+               <div class="bottom_text">
+                   <h1>Lorum ipsum dolor</h1>
+                   <p>Orciinterdum condimenterdum nullamcorper elit nam curabitur laoreet met praesenean et iaculum. Metridiculis conseque quis iaculum aen ean nunc aenean quis nam nis.</p>
+               </div>
+           </div>
+       
+           <div class="col span_1_of_3 ">
+               <div class="image">
+                   <img src="img/slider_02.jpg" alt="">
+               </div>
+               <div class="bottom_text">
+                   <h1>Lorum ipsum dolor</h1>
+                   <p>Orciinterdum condimenterdum nullamcorper elit nam curabitur laoreet met praesenean et iaculum. Metridiculis conseque quis iaculum aen ean nunc aenean quis nam nis.</p>
+               </div>
+           </div>
+       
+           <div class="col span_1_of_3 ">
+               <div class="image">
+                   <img src="img/slider_03.jpg" alt="">
+               </div>
+               <div class="bottom_text">
+                   <h1>Lorum ipsum dolor</h1>
+                   <p>Orciinterdum condimenterdum nullamcorper elit nam curabitur laoreet met praesenean et iaculum. Metridiculis conseque quis iaculum aen ean nunc aenean quis nam nis.</p>
+               </div>
+           </div>
+       </div>
+   </section> 
+    
+    
+   <section id="work" class="work_area">
+       <div class="row">
+           <div class="col span_1_of_3 work">
+               <div class="work_image">
+                   <img src="img/slider_01.jpg" alt="">
+               </div>
+               <div class="work_text">
+                   <h1>Lorum ipsum dolor</h1>
+                   <p>Orciinterdum condimenterdum nullamcorper elit nam curabitur laoreet met praesenean et iaculum. Metridiculis conseque quis iaculum aen ean nunc aenean quis nam nis.</p>
+               </div>
+           </div>
+       
+           <div class="col span_1_of_3 work">
+               <div class="work_image">
+                   <img src="img/slider_02.jpg" alt="">
+               </div>
+               <div class="work_text">
+                   <h1>Lorum ipsum dolor</h1>
+                   <p>Orciinterdum condimenterdum nullamcorper elit nam curabitur laoreet met praesenean et iaculum. Metridiculis conseque quis iaculum aen ean nunc aenean quis nam nis.</p>
+               </div>
+           </div>
+       
+           <div class="col span_1_of_3 work">
+               <div class="work_image">
+                   <img src="img/slider_03.jpg" alt="">
+               </div>
+               <div class="work_text">
+                   <h1>Lorum ipsum dolor</h1>
+                   <p>Orciinterdum condimenterdum nullamcorper elit nam curabitur laoreet met praesenean et iaculum. Metridiculis conseque quis iaculum aen ean nunc aenean quis nam nis.</p>
+               </div>
+           </div>
+       </div>
+   </section> 
+    
+    <section id="contact" class="contact_area">
+        <div class="row">
+            <div class="col span_1_of_4">
+                <h1>CONTACT DETAILS</h1>
+                <p>Convallisijusto vestas mus pellentum aenean sapibulum in aliquam volut pat integest nulla.</p>
+                <h2>Tel: xxxxx xxxxxxxxxx
+                Fax: xxxxx xxxxxxxxxx</h2>
+                <h3>Email: contact@mydomain.com</h3>
+            </div>
+        
+            <div class="col span_1_of_4">
+                <h1>QUICK LINKS</h1>
+                <ul>
+                    <li><a href="#">Link Text Here</a></li>
+                    <li><a href="#">Link Text Here</a></li>
+                    <li><a href="#">Link Text Here</a></li>
+                    <li><a href="#">Link Text Here</a></li>
+                </ul>
+            </div>
+        
+            <div class="col span_1_of_4">
+                <h1>FROM THE BLOG</h1>                
+                <h3>Blog Post Title</h3>
+                <h4>Posted by Admin on 00.00.0000</h4>
+                <p>Vestibulumaccumsan egestibulum eu justo convallis augue estas aenean elit intesque sed facilispede estibulum.</p>
+                <a href="#">Read More »</a>
+            </div>
+       
+            <div class="col span_1_of_4">
+                <h1>GRAB OUR NEWSLETTER</h1> 
+                <form action="#">
+                    <input type="text" placeholder="Name">
+                    <input type="text" placeholder="Email">
+                    <input type="submit" value="submit">
+                </form>
+            </div>
+        </div>
+    </section>
+    
+   <div id="copyright" class="copyright_area">
+       <div class="row">
+           <div class="left_copyright">
+               <p>Copyright © 2013 - All Rights Reserved - Domain Name</p>
+           </div>
+           <div class="right_copyright">
+           <p>Template by OS Templates</p>
+           </div>
+       </div>
+   </div> 
+    
+    
+    
+    <!-- 3no GooGle Cdn (bxslider)-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
+  <script src="js/respond.min.js"></script>  
+  <script src="js/jquery.bxslider.min.js"></script>  
+  <script src="js/jquery.waypoints.min.js"></script>  
+  <script src="js/main.js"></script>  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

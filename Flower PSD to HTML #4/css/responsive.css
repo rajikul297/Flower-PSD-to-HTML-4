@@ -1,0 +1,43 @@
+@media only screen and (max-width: 991px){
+     .main_nav{
+        display: none;
+    }
+    .mobile_menu span{ display: block;}
+
+    
+    .logo { width: 40%; margin-left: 8rem;}
+    .search_area { width: 30%; padding-right: 10rem; padding-left: 6rem;}
+    
+    .main_nav {width: 100%; text-align: center;}
+    
+    .span_1_of_4 { width: 49.2%; text-align: center;}
+    .span_1_of_4:nth-child(3){ margin-left: 0}
+    Span Ar p
+    .contact_area p {width: 80%; margin-left: 10%;}
+    .contact_area a {float: none;}
+    .contact_area form { width: 59%; text-align: center; margin-left: 12rem;}
+    
+    .image { width: 100%; padding-bottom: 2rem;}
+    .image img { width: 100%;}
+    
+    .bottom_text{text-align: center;}
+}
+
+@media only screen and (max-width: 480px){
+    .span_1_of_3 {width: 100%;}
+    .span_1_of_4 {
+		width: 100%; 
+	};
+    html{
+        font-size: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,344 @@
+/*====BASICK====*/
+*{  
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: #666666;
+    line-height: 1.5em;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+.row{
+    max-width: 90.60rem;
+    margin: 0 auto;
+}
+
+/*=============REUSEBLE COMPONENTS===============*/
+
+
+
+
+/*============================
+            HEADER SECTION
+==============================*/
+header{
+    background: #fcdfdf;
+    padding: 2rem 0;
+}
+.search_area{
+    float: right;
+    width: 30%;
+
+}
+.search_area form{
+    background: #fff;
+    float: right;
+    max-width: 21rem;
+    border-radius: 1rem;
+    padding: 2%;
+    width: 96%;
+}
+.search_area input{
+    border: 0;
+    width: 75%;
+    padding: 1%;
+    float: left;
+}
+form input[type="submit"].search_menu{
+    width: 23%;
+    background: url(img/sharch.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    cursor: pointer;
+}
+.logo{
+    margin-top: 2rem;
+    height: 5rem;
+    float: left;
+}
+.main_nav{
+    float: right;
+    margin-top: 2rem;  
+}
+.main_nav li{
+    display: inline-block;
+    margin-left: .5rem;
+    position: relative;
+}
+.main_nav li a{
+    color: #d13535;
+    text-decoration: none;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+.main_nav li a{
+    background: rgba(129, 129, 129, 0);
+    color: #fff;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: block;
+}
+.active{
+    background: rgba(129, 129, 129, 1);
+    border-radius: 1rem;
+}
+
+/*================================
+            HEADER DROPDWON MENU
+=================================*/
+.main_nav ul{
+    position: absolute;
+    background: #01fff5;
+    width: 10rem;
+    left: -9999px;
+    z-index: 1;
+}
+.main_nav li:hover ul{
+    left: 0;
+}
+.main_nav ul li{
+    margin: 0;
+    display: block;
+}
+.main_nav li:hover a{
+    color: #f00;    
+}
+.main_nav li:hover ul li a{
+    color: red;
+}
+.main_nav li:hover ul li a{
+     background: none ;
+}
+.main_nav li ul li:hover a{
+     background: #1fdae2 ;
+     color: blue;
+}
+/*================================
+        Slider Area
+=================================*/
+.slider_section{padding-top: 2rem;}
+.slider_section h1{
+    padding-top: 2rem ;
+    font-size: 2.2rem;
+    font-style: italic;
+    text-align: center;
+    line-height: 1.5em;
+}
+.item{
+    position: relative;
+}
+.item h1{
+    position: absolute;
+    color: #fff;
+    font-size: 4rem;
+    top: 80%;
+    left: 35%
+}
+
+/*===========sticky Menu============*/
+.sticky{
+    position: fixed;
+    background: #ff0;
+    width: 100%;
+    left: 0;
+    top: 0;
+    padding: 1rem;
+    z-index: 9999;
+}
+.sticky .logo{
+    margin-top: 0;
+}
+/*====================Mobile Menu========*/
+.mobile_menu span{
+    color: #fff;
+    float: right;
+    font-size: 4rem;
+    margin-right: 2rem ;
+    margin-bottom: 2rem ;
+    display: none;
+    cursor: pointer;
+}
+.overlay{
+    width: 0;
+    height: 100%;
+    background: red;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: .5s;
+    z-index: 1;
+}
+.overlay_content{
+    position: relative;
+    top: 15%;
+    text-align: center;
+    
+}
+.overlay a{
+    color: #fff;
+    font-size: 3rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    line-height: 1.5;
+    letter-spacing: .5rem;
+    
+}.overlay a:hover{color: blue;}
+.overlay .closebtn{
+    position: absolute;
+    right: 3rem;
+    font-size: 6rem;
+}
+/*================================
+        Slider   Bottom
+=================================*/
+.slider_section_bottom{
+    padding-bottom: 2rem ;
+}
+.image img{
+    width: 5rem;
+}
+.image{
+    float: left;
+    width: 6rem;
+    padding-bottom: 7rem;
+}
+.bottom_text h1{
+    color: #894aa3;
+    font-size: 2rem;
+}
+.bottom_text p{
+    font-size: 1.4rem;
+    line-height: 1.5em;
+}
+
+
+/*================================
+        Work Area
+=================================*/
+.work_area{
+    background: #ebebea;
+    padding: 4rem 0;
+}
+.work_image img{
+    width: 93%;
+    padding: 1rem 0rem 1rem 1rem;
+}
+.work_text h1{
+    color: #894aa3;
+    font-size: 2rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+.work_text p{
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+.work {
+    background: #fff;
+    padding-bottom: 1rem;
+}
+/*================================
+        contact Area
+=================================*/
+.contact_area{
+    padding: 4rem 0;
+    overflow: hidden;
+}
+.contact_area h1{
+    font-size: 1.4rem;
+    color: #666666;
+    margin-bottom: 3rem;
+}
+.contact_area h2{
+    font-size: 1.3rem;
+    color: #999999;
+    margin: .5rem 0;
+    line-height: 1.5;
+}
+.contact_area h3{
+    font-size: 1.3rem;
+    color: #999999;
+}
+.contact_area h4{
+    font-size: 1.3rem;
+    margin: .5rem 0;
+}
+.contact_area p{
+    font-size: 1.3rem;
+    color: #999999;
+}
+.contact_area p{
+    font-size: 1.3rem;
+    color: #999999;
+}
+.contact_area a{
+    font-size: 1.3rem;
+    text-decoration: none;
+    float: right;
+}
+/*=======================2No===QUICK LINKS======*/
+.contact_area ul{
+    width: 100%;
+}
+.contact_area ul li{
+    display: block;
+    margin: 2rem 0;
+    position: relative;
+}
+.contact_area ul li::before{
+   content: "";
+    position: absolute;
+    background: #999999;
+    width: 100%;
+    height: .1rem;
+    top: 2rem;
+    left: 0rem;
+}
+.contact_area ul li a{
+    color: #999999;
+    font-size: 1.3rem;
+    text-decoration: none;
+    float: none;
+}
+.contact_area form{
+    width: 100%;
+}
+.contact_area form input{
+    background: #e6e6e6;
+    padding: 1rem;
+    margin: .5rem 0;
+    border: 0;
+    border-radius: .5rem;    
+}
+.contact_area form input[type="submit"]{
+    color: #874ca0;
+    font-size: 2rem;
+}
+/*================================
+        CopyRight Area
+=================================*/
+.copyright_area{
+    background: #444444;
+    color: #d0d0d0;
+    padding: 2rem 0;
+}
+.left_copyright{
+    float: left;
+    width: 60%;
+}
+.right_copyright{
+    float: right;
+    width: 40%;
+    text-align: right;
+}
+
+
